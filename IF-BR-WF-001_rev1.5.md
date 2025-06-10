@@ -61,8 +61,8 @@ The DVL’s RS‑232 lines are converted to 3 .3 V TTL by an **Artekit AK�
 
 | Stage | Interface | Rate / Format |
 |-------|-----------|---------------|
-| DVL → Pi | UART 115 200 bps (Wayfinder binary) |
-| Pi → Navigator | MAVLink `VISION_POSITION_DELTA` 10 Hz |
+| DVL → Pi | UART 115 200 bps | Wayfinder binary |
+| Pi → Navigator | MAVLink `VISION_POSITION_DELTA` | 10 Hz |
 
 1. **BlueOS:** add `/dev/ttySx` (115 200 bps) under *Serial Devices*; label *Wayfinder*.  
 2. Run Teledyne driver container; output to `tcp://127.0.0.1:14777`.  
