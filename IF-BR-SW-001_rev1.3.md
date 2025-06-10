@@ -12,14 +12,14 @@
 
 | Layer | Item | Runs where | Board interconnect* | Purpose |
 |-------|------|-----------|---------------------|---------|
-| Vehicle firmware | **ArduSub 4.1 +** on Navigator | Navigator PCB stacked on Raspberry Pi | **GPIO header (SPI, I²C, and auxiliary UART)** citeturn0search5turn0search4 | Attitude, thrust, flight modes |
+| Vehicle firmware | **ArduSub 4.1 +** on Navigator | Navigator PCB stacked on Raspberry Pi | **GPIO header (SPI, I²C, and auxiliary UART)** | Attitude, thrust, flight modes |
 | Companion middleware | **BlueOS 1.1 – 1.3** | Raspberry Pi 4 | 14550/14552 UDP out, 14401 UDP in, 14777 TCP | MAVLink routing, extensions |
 | Position sensors | Wayfinder DVL & UGPS/A1 | Vehicle & topside | Serial (UART) / UDP | Feed EKF (`VISION_POSITION_DELTA`, `GPS_INPUT`) |
 | Top‑side C2 | QGroundControl, Cockpit, MAVProxy, MAVSDK | Operator PC | 14550 UDP in | Pilot UI, scripting |
 | Robotics middleware (opt.) | **ROS 2** via BlueOS *ROS2 extension* | Pi or topside PC | 14771 UDP, DDS 7400 | Autonomous control |
 
 \* Navigator plugs directly onto the Pi GPIO pins—no USB cable is used.  
-The underlying kernel overlay enables the SPI, I²C, ADC, PWM and LED peripherals. citeturn2view0
+The underlying kernel overlay enables the SPI, I²C, ADC, PWM and LED peripherals. 
 
 ---
 
