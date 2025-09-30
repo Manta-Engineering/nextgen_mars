@@ -78,7 +78,7 @@ The DVL’s RS‑232 lines are converted to 3.3 V TTL by an **Artekit AK‑3
 | Pool | Drift < 0.02 m s⁻¹ static |
 | Sea | **POSHOLD** ±0.5 m; ≤ 2 % track error over 100 m |
 
-### ROS2 code
+### ROS2 code   
 
 A ROS2 node for connection to the Wayfinder DVL is available at [Wayfinder ROS Node](https://github.com/Manta-Engineering/teledyne_wayfinder)
 ---
