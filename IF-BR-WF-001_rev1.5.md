@@ -81,6 +81,7 @@ The DVL’s RS‑232 lines are converted to 3.3 V TTL by an **Artekit AK‑3
 ### ROS2 code   
 
 A ROS2 node for connection to the Wayfinder DVL is available at [Wayfinder ROS Node](https://github.com/Manta-Engineering/teledyne_wayfinder)
+
 ---
 
 ### 7 Change Control  
