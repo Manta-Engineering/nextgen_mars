@@ -2,14 +2,14 @@
 # Interface Specification  
 ## Teledyne Wayfinder DVL Integration – BlueROV2 / Navigator + BlueOS  
 
-*Document ID:* **IF‑BR‑WF‑001** *Revision:* **1.5** *Date:* 10 Jun 2025  
+*Document ID:* **IF‑BR‑WF‑001** *Revision:* **1.6** *Date:* 30 Sep 2025  
 
 ---
 
 ### 1 Scope  
 
 Integrate a **Teledyne Wayfinder Doppler Velocity Log** with a **BlueROV2** using a **Navigator** flight‑controller and **BlueOS**.  
-The DVL’s RS‑232 lines are converted to 3 .3 V TTL by an **Artekit AK‑3232L** breakout; wiring is direct—no DB‑9 connector.  
+The DVL’s RS‑232 lines are converted to 3.3 V TTL by an **Artekit AK‑3232L** breakout; wiring is direct soldered - no DB‑9 connector.  
 
 ---
 
@@ -78,8 +78,10 @@ The DVL’s RS‑232 lines are converted to 3 .3 V TTL by an **Artekit AK�
 | Pool | Drift < 0.02 m s⁻¹ static |
 | Sea | **POSHOLD** ±0.5 m; ≤ 2 % track error over 100 m |
 
+### ROS2 code
+A ROS2 node for connection to the Wayfinder DVL is available at [Wayfinder ROS Node](https://github.com/Manta-Engineering/teledyne_wayfinder)
 ---
 
 ### 7 Change Control  
 
-Re‑test after firmware or BlueOS upgrades, or if wiring migrates to RS232 channel 2 due to extra channel usage.
+Re‑test after firmware or BlueOS upgrades, or if wiring migrates to USB serial converter due to connector constraints.
